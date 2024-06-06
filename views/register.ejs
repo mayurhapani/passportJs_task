@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <main class="bg-zinc-800">
+      <div class="container mx-auto">
+        <div class="h-screen flex justify-center items-center">
+          <div class="bg-zinc-600 w-1/4 rounded-lg p-5">
+            <h1 class="text-4xl font-bold mb-10 text-center">Register Page</h1>
+            <form action="/addUser" method="post">
+              <input
+                placeholder="Enter Your Name"
+                name="username"
+                class="bg-transparent border-2 w-full p-2 border-zinc-500 rounded-lg mb-3 text-white"
+                type="text"
+              />
+              <input
+                placeholder="Enter Your Email"
+                name="email"
+                class="bg-transparent border-2 w-full p-2 border-zinc-500 rounded-lg mb-3 text-white"
+                type="email"
+              />
+              <input
+                placeholder="Enter Your Password"
+                name="password"
+                class="bg-transparent border-2 w-full p-2 border-zinc-500 rounded-lg mb-3 text-white"
+                type="password"
+              />
+              <input
+                placeholder="Enter Your Phone Number"
+                name="phone"
+                class="bg-transparent border-2 w-full p-2 border-zinc-500 rounded-lg mb-3 text-white"
+                type="number"
+              />
+              <input
+                class="bg-blue-700 rounded-lg py-2 px-5 mt-3 text-white font"
+                type="submit"
+                value="Add User"
+              />
+            </form>
+            <p class="text-white text-center mt-3">
+              If You Have Already Account ? <a class="text-blue-400" href="/login"> Log In</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
