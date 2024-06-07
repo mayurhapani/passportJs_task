@@ -19,15 +19,5 @@ const addUser = async (req, res) => {
   res.redirect("/login");
 };
 
-const Logout = (req, res) => {
-  console.log("logout");
-  req.logOut = (err) => {
-    if (err) {
-      return err;
-    } else {
-      res.redirect("/login");
-    }
-  };
-};
 
 module.exports = { home, login, register, addUser };

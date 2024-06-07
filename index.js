@@ -14,7 +14,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(session({ secret: "1234", resave: false, saveUninitialized: false }));
 app.use(passport.initialize());
 app.use(passport.session());
-
 localAuth(passport);
 
 app.use(router);
